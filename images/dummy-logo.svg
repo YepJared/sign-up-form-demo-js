@@ -1,0 +1,11 @@
+<!-- sample rectangle -->
+<svg width="200" height="200" xmlns="http://www.w3.org/2000/svg">
+  <circle r="50" cx="100" cy="100" fill="red" />
+  <rect width="200" height="75" x="0" y="100" rx="15" ry="15" fill="darkblue"/>
+  <line x1="20" y1="20" x2="61" y2="60" style="stroke:red;stroke-width:3"/>
+  <line x1="59" y1="60" x2="101" y2="20" style="stroke:red;stroke-width:3"/>
+  <line x1="180" y1="20" x2="139" y2="60" style="stroke:red;stroke-width:3"/>
+  <line x1="99" y1="20" x2="141" y2="60" style="stroke:red;stroke-width:3"/>
+  <line x1="20" y1="20" x2="50" y2="100" style="stroke:red;stroke-width:3"/>
+  <line x1="150" y1="100" x2="180" y2="20" style="stroke:red;stroke-width:3"/>
+</svg>
