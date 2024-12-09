@@ -16,3 +16,7 @@ The goal of this project is to create a mock sign up page using HTML and CSS.
     - Button will not do anything
 - User should see a splash image with a logo that takes up the left side of the page
     - Logo should use an external font
+
+# external asset credits
+
+koi background by monstreh: https://pixabay.com/vectors/pattern-fish-carp-koi-koi-carp-3296033/
