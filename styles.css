@@ -6,11 +6,7 @@
 }
 
 body {
-    line-height: 1.5;
     -webkit-font-smoothing: antialiased;
-    min-height: 100vw;
-    display: flex;
-    flex: 0;
     font-family: system-ui, "Segoe UI", Roboto, Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
 }
 
@@ -25,6 +21,7 @@ input, button, textarea, select {
 
 p, h1, h2, h3, h4, h5, h6 {
     overflow-wrap: break-word;
+    max-inline-size: 66ch;
 }
 
 p {
@@ -48,9 +45,16 @@ h1, h2, h3, h4, h5, h6 {
 
 /* Begin rest of styling */
 
+body {
+    display: flex;
+    flex: 0;
+    gap: 24px;
+    background-color: #98afd193;
+}
+
 .splash-container {
     background: center/60% repeat url("../images/koi.png");
-    height: 100vh;
+    min-height: 100vh;
     width: clamp(10rem, 400px, 33vw);
 }
 
@@ -58,12 +62,12 @@ h1, h2, h3, h4, h5, h6 {
     background-color: #000000CC;
     position: relative;
     top: 20%;
-    padding: 1em;
+    padding: 16px;
     text-align: center;
     display: flex;
     align-items: center;
     justify-content: center;
-    gap: 1em;
+    gap: 16px;
     flex-wrap: wrap;
 }
 
@@ -78,4 +82,15 @@ h1, h2, h3, h4, h5, h6 {
     font-family: "Tourney";
     font-size: 48px;
     font-weight: 600;
+}
+
+.sign-up-container {
+    display: flex;
+    flex-direction: column;
+    align-self: center;
+    gap: 30px;
+}
+
+.sign-up-text {
+    line-height: 1.2;
 }
