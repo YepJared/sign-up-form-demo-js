@@ -20,3 +20,5 @@ The goal of this project is to create a mock sign up page using HTML and CSS.
 # external asset credits
 
 koi background by monstreh: https://pixabay.com/vectors/pattern-fish-carp-koi-koi-carp-3296033/
+
+Logo font by Tyler Finck, ETC: https://fonts.google.com/specimen/Tourney?categoryFilters=Feeling:%2FExpressive%2FFuturistic

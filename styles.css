@@ -11,6 +11,7 @@ body {
     min-height: 100vw;
     display: flex;
     flex: 0;
+    font-family: system-ui, "Segoe UI", Roboto, Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
 }
 
 img {
@@ -34,10 +35,47 @@ h1, h2, h3, h4, h5, h6 {
     text-wrap: balance;
 }
 
+/* Fonts */
+
+.tourney-logo {
+  font-family: "Tourney", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 100;
+  font-style: normal;
+  font-variation-settings:
+    "wdth" 100;
+}
+
 /* Begin rest of styling */
 
 .splash-container {
     background: center/60% repeat url("../images/koi.png");
     height: 100vh;
-    width: 33vw;
+    width: clamp(10rem, 400px, 33vw);
+}
+
+.logo-background {
+    background-color: #000000CC;
+    position: relative;
+    top: 20%;
+    padding: 1em;
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 1em;
+    flex-wrap: wrap;
+}
+
+.logo {
+    height: 96px;
+}
+
+.logo-text {
+    background-image: linear-gradient(red, blue);
+    color: transparent;
+    background-clip: text;
+    font-family: "Tourney";
+    font-size: 48px;
+    font-weight: 600;
 }
