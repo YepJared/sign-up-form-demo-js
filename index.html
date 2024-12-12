@@ -20,29 +20,45 @@
         <h1 class="sign-up-text">This service <em>isn't</em> real! It totally won't help you trade koi fish NFTs as currency with other koi fish enthusiasts. No one needs this in their life.</h1>
         <h1 class="sign-up-text">Sign up <em>now</em> anyway!</h1>
         <form action="">
-            <legend>Fill this in</legend>
-            <fieldset>
-                <label for="first_name">First Name</label>
-                <input type="text" id="first_name" name="first_name">
-            
-                <label for="last_name">Last Name</label>
-                <input type="text" id="last_name" name="last_name">
-            </fieldset>
-            <fieldset>
-                <label for="email">Email</label>
-                <input type="email" id="email" name="email">
+            <div class="form-highlight">
+                <legend>Fill this in!</legend>
+                <fieldset>
+                    
+                    <div class="input-field">
+                        <label for="first_name">First Name</label>
+                        <input type="text" id="first_name" name="first_name">
+                    </div>
+                
+                    <div class="input-field">
+                        <label for="last_name">Last Name</label>
+                        <input type="text" id="last_name" name="last_name">
+                    </div>
+                </fieldset>
+                <fieldset>
+                    <div class="input-field">
+                        <label for="email">Email</label>
+                        <input type="email" id="email" name="email">
+                    </div>
 
-                <label for="phone_number">Phone Number</label>
-                <input type="tel" id="phone_number" name="phone_number">
-            </fieldset>
-            <fieldset>
-                <label for="password">Password</label>
-                <input type="password" id="password" name="password">
+                    <div class="input-field">
+                        <label for="phone_number">Phone Number</label>
+                        <input type="tel" id="phone_number" name="phone_number">
+                    </div>
+                </fieldset>
+                <fieldset>
+                    <div class="input-field">
+                        <label for="password">Password</label>
+                        <input type="password" id="password" name="password">
+                    </div>
 
-                <label for="confirm_password">Password</label>
-                <input type="password" id="confirm_password" name="confirm_password">
-            </fieldset>
-            <button type="submit">Create Account</button>
+                    <div class="input-field">
+                        <label for="confirm_password">Password</label>
+                        <input type="password" id="confirm_password" name="confirm_password">
+                    </div>
+                </fieldset>
+            </div>
+            <button class="submit" type="submit">Create Account</button>
+            <p class="text">Already have an account? <a href="#">Log in</a></p>
         </form>
     </div>
 </body>

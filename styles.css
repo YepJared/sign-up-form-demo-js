@@ -19,6 +19,10 @@ input, button, textarea, select {
     font: inherit;
 }
 
+input {
+    appearance: none;
+}
+
 p, h1, h2, h3, h4, h5, h6 {
     overflow-wrap: break-word;
     max-inline-size: 66ch;
@@ -48,7 +52,6 @@ h1, h2, h3, h4, h5, h6 {
 body {
     display: flex;
     flex: 0;
-    gap: 24px;
     background-color: #98afd193;
 }
 
@@ -88,9 +91,73 @@ body {
     display: flex;
     flex-direction: column;
     align-self: center;
-    gap: 30px;
+    flex: 1;
 }
 
 .sign-up-text {
     line-height: 1.2;
+    padding: 12px 24px;
+}
+
+form {
+    padding: 12px 0;
+}
+
+.form-highlight {
+    background-color: white;
+    padding: 0 24px 24px;
+    box-shadow: 0px 8px 4px #98afd1;
+    position: relative;
+}
+
+legend {
+    font-size: 24px;
+    font-weight: bold;
+    padding: 12px 0;
+}
+
+fieldset {
+    border: none;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 28px;
+    padding: 14px 0;
+}
+
+input {
+    width: clamp(250px, 40ch, 25vw);
+    border: 1px solid #E5E7EB;
+    border-radius: 4px;
+}
+
+.input-field {
+    display: flex;
+    flex-direction: column;
+}
+
+.submit {
+    margin: 24px;
+    padding: 8px 24px;
+    border: none;
+    border-radius: 4px;
+    background-color: #c1392a;
+    color: white;
+    font-weight: bold;
+}
+
+.text {
+    padding: 0 24px;
+}
+
+a {
+    font-weight: bold;
+    color: #c1392a;
+}
+
+a:hover {
+    color: #080809;
+}
+
+a:visited {
+    color: #8f5b5b;
 }
