@@ -147,9 +147,33 @@ input:focus {
     box-shadow: 1px 2px 3px var(--primary-color);
 }
 
+input:invalid {
+    border: 1px solid red;
+}
+
 .input-field {
     display: flex;
     flex-direction: column;
+}
+
+input + span {
+    position: relative;
+}
+
+#password:invalid + span::after {
+    font-size: 0.7rem;
+    content: "*Password must be at least 8 characters";
+    color: red;
+    position: absolute;
+    padding: .5em 0;
+}
+
+#confirm_password:invalid + span::after {
+    font-size: 0.7rem;
+    content: "*Passwords must match";
+    color: red;
+    position: absolute;
+    padding: .5em 0;
 }
 
 .submit {
