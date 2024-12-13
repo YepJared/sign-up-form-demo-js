@@ -134,9 +134,17 @@ fieldset {
 }
 
 input {
+    font-size: 12px;
     width: clamp(250px, 40ch, 25vw);
     border: 1px solid #E5E7EB;
     border-radius: 4px;
+    padding: .5em .75em;
+}
+
+input:focus {
+    outline: none;
+    border: 1px solid var(--primary-color);
+    box-shadow: 1px 2px 3px var(--primary-color);
 }
 
 .input-field {
