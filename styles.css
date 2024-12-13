@@ -47,18 +47,27 @@ h1, h2, h3, h4, h5, h6 {
     "wdth" 100;
 }
 
+/* Constants */
+
+:root {
+    --form-spacing: 24px;
+    --primary-color: #98afd1;
+    --primary-color-light: #98afd193;
+    --secondary-color: #c1392a;
+}
+
 /* Begin rest of styling */
 
 body {
     display: flex;
     flex: 0;
-    background-color: #98afd193;
+    background-color: var(--primary-color-light);
 }
 
 .splash-container {
     background: center/60% repeat url("../images/koi.png");
     min-height: 100vh;
-    width: clamp(10rem, 400px, 33vw);
+    width: clamp(15rem, 400px, 33vw);
 }
 
 .logo-background {
@@ -96,24 +105,24 @@ body {
 
 .sign-up-text {
     line-height: 1.2;
-    padding: 12px 24px;
+    padding: calc(var(--form-spacing) / 2) var(--form-spacing);
 }
 
 form {
-    padding: 12px 0;
+    padding: calc(var(--form-spacing) / 2) 0;
 }
 
 .form-highlight {
     background-color: white;
-    padding: 0 24px 24px;
-    box-shadow: 0px 8px 4px #98afd1;
+    padding: 0 var(--form-spacing) var(--form-spacing);
+    box-shadow: 0px 8px 4px var(--primary-color);
     position: relative;
 }
 
 legend {
     font-size: 24px;
     font-weight: bold;
-    padding: 12px 0;
+    padding: calc(var(--form-spacing) / 2) 0;
 }
 
 fieldset {
@@ -136,22 +145,22 @@ input {
 }
 
 .submit {
-    margin: 24px;
-    padding: 8px 24px;
+    margin: var(--form-spacing);
+    padding: 8px var(--form-spacing);
     border: none;
     border-radius: 4px;
-    background-color: #c1392a;
+    background-color: var(--secondary-color);
     color: white;
     font-weight: bold;
 }
 
 .text {
-    padding: 0 24px;
+    padding: 0 var(--form-spacing);
 }
 
 a {
     font-weight: bold;
-    color: #c1392a;
+    color: var(--secondary-color);
 }
 
 a:hover {
