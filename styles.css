@@ -65,7 +65,7 @@ body {
 }
 
 .splash-container {
-    background: center/60% repeat url("../images/koi.png");
+    background: center/60% repeat url("./images/koifish.png");
     min-height: 100vh;
     width: clamp(15rem, 400px, 33vw);
 }
